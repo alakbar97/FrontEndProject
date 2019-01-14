@@ -12,3 +12,15 @@
     text-transform: uppercase;
     text-decoration: none !important;
 }
+.category{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: none;
+}
+form button{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: white;
+    border: none;
+    width: 40px;
+}
