@@ -1,6 +1,14 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 .dropimg {
     width: 200px !important;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none !important;
 }
