@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
 }
+.container-fluid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: repeat(2, 100px);
+}
 .dropimg {
     width: 200px !important;
 }
