@@ -158,16 +158,23 @@
                     </li>
                     <li>
                         <div class="dropdown">
-                            <button type="button" class="btn btn-dark text-dark btn-sm dropdown-toggle" style="background: none; border: none;"
-                                data-toggle="dropdown">
-                                More
+                            <button class="btn dropdown-toggle" style="background: none;" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              More
                             </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Top-250 rated movies</a>
-                                <a class="dropdown-item" href="#">Most Viewed</a>
-                                <a class="dropdown-item" href="#">Most Liked</a>
-                                <a class="dropdown-item" href="#">Sign In</a>
-                            </div>
+                            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                <li class="dropdown-item"><a class="text-dark" href="#">Top-250 rated movies</a></li>
+                                <li class="dropdown-item"><a class="text-dark" href="#">Most Viewed</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li class="dropdown-submenu">
+                                  <a  class="dropdown-item" href="#">Others</a>
+                                  <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a class="text-dark" href="#">External Link</a></li>
+                                    
+                                    <li class="dropdown-item"><a class="text-dark" href="#">Menu Item</a></li>
+                                    <li class="dropdown-item"><a class="text-dark" href="#">Second Page</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
                         </div>
 
                     </li>
