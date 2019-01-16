@@ -412,8 +412,20 @@ position: fixed;
 bottom: 0px;
 right: 0px;
 font-size: 40px;
-z-index: 1;
+z-index: 100;
 }
 .item img{
     height: 150px;
+}
+.card-body h5{
+    text-align: center;
+}
+.card-footer{
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: black;
+}
+.card-footer i{
+font-size: 20px;
 }
