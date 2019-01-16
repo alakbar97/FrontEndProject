@@ -363,7 +363,15 @@ ul li a {
 .information p{
     color: white;
 }
-#map{
-    width: 650px;
+.mapouter {
+    text-align: right;
     height: 220px;
+    width: 650px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 220px;
+    width: 600px;
 }
