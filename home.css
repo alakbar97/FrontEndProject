@@ -414,3 +414,6 @@ right: 0px;
 font-size: 40px;
 z-index: 1;
 }
+.item img{
+    height: 150px;
+}
