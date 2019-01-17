@@ -361,12 +361,13 @@
             </div>
         </div> <br> <br>
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')">Thriller</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">Comedy</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Drama</button>
+            <button id="defaultOpen" class="tablinks" onclick="openMovie(event, 'Thriller')">Thriller</button>
+            <button class="tablinks" onclick="openMovie(event, 'Comedy')">Comedy</button>
+            <button class="tablinks" onclick="openMovie(event, 'Drama')">Drama</button>
+            <button class="tablinks" onclick="openMovie(event, 'Crime')">Crime</button>
         </div>
 
-        <div id="London" class="tabcontent">
+        <div id="Thriller" class="tabcontent">
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
@@ -462,13 +463,13 @@
             </div>
         </div>
 
-        <div id="Paris" class="tabcontent">
+        <div id="Comedy" class="tabcontent">
                 <div class="owl-carousel owl-theme">
                         <div class="item">
                             <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
-                                <img class="card-img-top" src="capefear.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="anchorman.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Cape Fear</h5>
+                                    <h5 class="card-title">Anchorman</h5>
                                     <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 7.3</p>
                                 </div>
                                 <div class="card-footer">
@@ -481,9 +482,9 @@
                         </div>
                         <div class="item">
                             <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
-                                <img class="card-img-top" src="game.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="groundhog.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">The Game</h5>
+                                    <h5 class="card-title">Groundhog Day</h5>
                                     <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 7.8</p>
                                 </div>
                                 <div class="card-footer">
@@ -496,9 +497,9 @@
                         </div>
                         <div class="item">
                             <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
-                                <img class="card-img-top" src="getout.jpeg" alt="Card image cap">
+                                <img class="card-img-top" src="hangover.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Get Out</h5>
+                                    <h5 class="card-title">Hangover</h5>
                                     <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 7.7</p>
                                 </div>
                                 <div class="card-footer">
@@ -511,9 +512,9 @@
                         </div>
                         <div class="item">
                             <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
-                                <img class="card-img-top" src="looper.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="shaun.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Looper</h5>
+                                    <h5 class="card-title">Shaun of the Dead</h5>
                                     <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 7.4</p>
                                 </div>
                                 <div class="card-footer">
@@ -526,9 +527,9 @@
                         </div>
                         <div class="item">
                             <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
-                                <img class="card-img-top" src="psy.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="superbad.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Psycho</h5>
+                                    <h5 class="card-title">Superbad</h5>
                                     <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 8.5</p>
                                 </div>
                                 <div class="card-footer">
@@ -539,26 +540,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
-                                <img class="card-img-top" src="zodiac.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Zodiac</h5>
-                                    <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 7.7</p>
-                                </div>
-                                <div class="card-footer">
-                                    <a href="#" title="Add to wishlist"><i class="fas fa-heart"></i></a>
-                                    <a href="#" title="Add to card"><i class="fas fa-shopping-cart"></i></a>
-                                    <a href="#" title="Add to compare"><i class="fas fa-compress-arrows-alt"></i></a>
-                                    <a href="#" title="Quick View"><i class="fas fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </div>
-            
                     </div> 
         </div>
 
-        <div id="Tokyo" class="tabcontent">
+        <div id="Drama" class="tabcontent">
                 <div class="owl-carousel owl-theme">
                         <div class="item">
                             <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
@@ -653,6 +638,101 @@
             
                     </div> 
         </div>
+        <div id="Crime" class="tabcontent">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
+                            <img class="card-img-top" src="capefear.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Cape Fear</h5>
+                                <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 7.3</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                                <a href="#" title="Add to card"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" title="Add to compare"><i class="fas fa-compress-arrows-alt"></i></a>
+                                <a href="#" title="Quick View"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
+                            <img class="card-img-top" src="game.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">The Game</h5>
+                                <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 7.8</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                                <a href="#" title="Add to card"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" title="Add to compare"><i class="fas fa-compress-arrows-alt"></i></a>
+                                <a href="#" title="Quick View"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
+                            <img class="card-img-top" src="getout.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Get Out</h5>
+                                <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 7.7</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                                <a href="#" title="Add to card"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" title="Add to compare"><i class="fas fa-compress-arrows-alt"></i></a>
+                                <a href="#" title="Quick View"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
+                            <img class="card-img-top" src="looper.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Looper</h5>
+                                <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 7.4</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                                <a href="#" title="Add to card"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" title="Add to compare"><i class="fas fa-compress-arrows-alt"></i></a>
+                                <a href="#" title="Quick View"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
+                            <img class="card-img-top" src="psy.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Psycho</h5>
+                                <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 8.5</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                                <a href="#" title="Add to card"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" title="Add to compare"><i class="fas fa-compress-arrows-alt"></i></a>
+                                <a href="#" title="Quick View"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
+                            <img class="card-img-top" src="zodiac.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Zodiac</h5>
+                                <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 7.7</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                                <a href="#" title="Add to card"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" title="Add to compare"><i class="fas fa-compress-arrows-alt"></i></a>
+                                <a href="#" title="Quick View"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
 
         <br> <br>
 
