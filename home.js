@@ -18,10 +18,10 @@ $(document).ready(function () {
             })
         }
     })
-    $(".lefter").click(function() {
+    $(".lefter").click(function () {
         $(".reng").toggleClass("sidenav");
         $(".lefter").toggleClass("colors");
-        
+
     })
 })
 $('.owl-carousel').owlCarousel({
