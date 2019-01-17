@@ -429,3 +429,42 @@ z-index: 100;
 .card-footer i{
 font-size: 20px;
 }
+.sidenav {
+    height: 100px;
+    width: 30px;
+    position: fixed;
+    z-index: 1;
+    top: 35%;
+    right: 0;
+    background: white;
+    display: block;
+  }
+  
+  .sidenav a {
+      width: 30px;
+      height: 10px;
+      background: red;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+  }
+  .colors{
+height: 10px;
+width: 25px;
+position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 30px !important;
+  }
+  .lefter{
+    height: 35px;
+    width: 30px;
+    position: fixed;
+        z-index: 1;
+        top: 35%;
+        right: 0;
+  }
+  .lefter i{
+    font-size: 24px;
+    margin-left: -5px;
+  }
