@@ -461,23 +461,25 @@ ul li a {
 }
 
 .sidenav {
-    height: 100px;
-    width: 30px;
+    height: 213px;
+    width: 44px;
     position: fixed;
     z-index: 1;
-    top: 35%;
+    top: 32%;
     right: 0;
     background: white;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .sidenav a {
-    width: 30px;
-    height: 10px;
-    background: red;
+    width: 32px;
+    height: 32px;
     text-decoration: none;
     color: #818181;
-    display: block;
+    display: block !important;
 }
 
 .colors {
@@ -486,7 +488,7 @@ ul li a {
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 30px !important;
+    right: 44px !important;
 }
 
 .lefter {
@@ -501,4 +503,24 @@ ul li a {
 .lefter i {
     font-size: 24px;
     margin-left: -5px;
+}
+
+#demo {
+    width: 90%;
+    margin: auto;
+}
+
+.before,
+.after {
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reng a {
+    display: none;
 }

@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <nav id="headPart">
             <div class=" firstline bg-success" style="height: 32px;">
                 <div class="d-flex align-items-center justify-content-around" style="border-bottom: 1px solid white;height: 100%;">
@@ -61,8 +61,7 @@
                         <a href="#" class="comp btn btn-sm text-light">COMPARE (0)</a>
                         <a href="#" class="wish btn btn-sm text-light">WISHLIST (0)</a>
                         <div class="dropdown">
-                            <button type="button" class="btn btn-primary btn-sm btn-success dropdown-toggle"
-                                data-toggle="dropdown">
+                            <button type="button" class="btn btn-sm btn-success dropdown-toggle Account" data-toggle="dropdown">
                                 <i class="far fa-user"></i> ACCOUNT
                             </button>
                             <div class="dropdown-menu dropimg">
@@ -86,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-success" style="height: 104px;">
+            <div class="bg-success secpart" style="height: 104px;">
                 <div class="d-flex justify-content-between align-items-center secondline" style="height: 100%;">
                     <a href="#" class="text-light logo">CLASSIC MOVIES</a>
                     <div class="search">
@@ -116,7 +115,7 @@
                         </form>
                     </div>
                     <div class="dropdown">
-                        <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown">
+                        <button type="button" class="btn btn-success btn-sm dropdown-toggle shop" data-toggle="dropdown">
                             <i class="fas fa-shopping-cart" style="font-size: 28px;"></i>
                             <span>Shopping Cart</span>
                         </button>
@@ -208,7 +207,7 @@
                             <br>
                             <h3>MOVIE for TODAY</h3>
                             <br>
-                            <button class="btn btn-success">Watch Now</button>
+                            <button class="btn btn-success now">Watch Now</button>
                         </div>
                     </div>
                     <img src="fc.jpg">
@@ -221,7 +220,7 @@
                             <br>
                             <h3>New Arrivals on Bluray</h3>
                             <br>
-                            <button class="btn btn-success">Watch Now</button>
+                            <button class="btn btn-success now">Watch Now</button>
                         </div>
                     </div>
                     <img src="gf.jpg">
@@ -233,7 +232,7 @@
                         <br>
                         <h3>SPECIAL for TODAY</h3>
                         <br>
-                        <button class="btn btn-success">Watch Now</button>
+                        <button class="btn btn-success now">Watch Now</button>
                     </div>
                     <img src="goodf.jpg">
                 </div>
@@ -244,7 +243,7 @@
                         <br>
                         <h3>Recommended to Watch</h3>
                         <br>
-                        <button class="btn btn-success">Watch Now</button>
+                        <button class="btn btn-success now">Watch Now</button>
                     </div>
                     <img src="lotr.jpeg">
                 </div>
@@ -255,22 +254,28 @@
                         <br>
                         <h3>SPECIAL for TODAY</h3>
                         <br>
-                        <button class="btn btn-success">Watch Now</button>
+                        <button class="btn btn-success now">Watch Now</button>
                     </div>
                     <img src="sl.jpg">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+                <div class="before bg-success">
+                    <span class="carousel-control-prev-icon"></span>
+                </div>
             </a>
             <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
+                <div class="after bg-success">
+                    <span class="carousel-control-next-icon"></span>
+                </div>
+
             </a>
         </div>
         <br>
         <br>
-        <div class="row info" style="height: 100px; padding:15px;">
-            <div class="bonus col-md-12 d-flex justify-content-around align-items-center" style="background: rgb(111, 118, 130)">
+        <div class="row info" style="height: 100px; padding:5px;">
+            <div class="col-md-1"></div>
+            <div class="bonus col-md-10 d-flex justify-content-around align-items-center" style="background: rgb(111, 118, 130)">
                 <div>
                     <i class="fas fa-trophy text-warning" style="float: left; font-size: 60px;padding-top: 25px;"></i>
                     <h6 style="padding-top:15px;">BONUS PLUS</h6>
@@ -290,6 +295,7 @@
                 <a class="uphead" href="#headPart"><i class="fas fa-arrow-up"></i></a>
 
             </div>
+            <div class="col-md-1"></div>
         </div>
         <br>
         <div class="row images">
@@ -299,17 +305,17 @@
                         <h2 class="text-light">Learn About 7 Sins</h2>
                         <i class="text-light">Now Available For 3D</i> <br> <br>
                         <div class="text-center">
-                            <button class="btn btn-success">Watch Now</button>
+                            <button class="btn btn-success now">Watch Now</button>
                         </div>
                     </div>
                     <img width="100%" height="300px" src="seven.jpg">
                 </div>
                 <div class="d-flex">
                     <div class="city" style="position: absolute;left: 5%; top:70%">
-                        <h5 class="text-light">God Abonded This City</h5>
+                        <h5 class="text-light">People Abonded This City</h5>
                         <i class="text-light">Now Available For 3D</i> <br> <br>
                         <div class="text-center">
-                            <button class="btn btn-success">Watch Now</button>
+                            <button class="btn btn-success now">Watch Now</button>
                         </div>
                     </div>
                     <img width="50%" height="200px" src="cog.jpg">
@@ -317,7 +323,7 @@
                         <h4 class="text-light">Reveal Silence</h4>
                         <i class="text-light">Now Available For 3D</i> <br> <br>
                         <div class="text-center">
-                            <button class="btn btn-success">Watch Now</button>
+                            <button class="btn btn-success now">Watch Now</button>
                         </div>
                     </div>
                     <img width="50%" height="200px" src="sol.jpg">
@@ -329,7 +335,7 @@
                         <h2 class="text-light">Universes Collapse</h2>
                         <i class="text-light">Now Available For 3D</i> <br> <br>
                         <div class="text-center">
-                            <button class="btn btn-success">Watch Now</button>
+                            <button class="btn btn-success now">Watch Now</button>
                         </div>
                     </div>
                     <img width="50%" height="200px" src="sm.jpg">
@@ -337,7 +343,7 @@
                         <h2 class="text-light">Best Animated Ever</h2>
                         <i class="text-light">Now Available For 3D</i> <br> <br>
                         <div class="text-center">
-                            <button class="btn btn-success">Watch Now</button>
+                            <button class="btn btn-success now">Watch Now</button>
                         </div>
                     </div>
                     <img width="50%" height="200px" src="sa.jpg">
@@ -347,7 +353,7 @@
                         <h2 class="text-light">Group of Soldiers Suffer for One</h2>
                         <i class="text-light">Now Available For 3D</i> <br> <br>
                         <div class="text-center">
-                            <button class="btn btn-success">Watch Now</button>
+                            <button class="btn btn-success now">Watch Now</button>
                         </div>
                     </div>
                     <img width="100%" height="300px" src="spr.jpeg">
@@ -470,7 +476,7 @@
             <div class="secFoot">
                 <form>
                     <div class="subMail input-group mb-2" style="width:550px;">
-                        <input type="text" class="form-control" placeholder="Your email address" id="demo" name="email">
+                        <input type="text" class="form-control" placeholder="Your email address" name="email">
                         <div class="input-group-append">
                             <button class="btn">Subscribe</button>
                         </div>
@@ -519,10 +525,10 @@
     </div>
     <button class="lefter"><i class="fas fa-palette"></i></button>
     <div class="reng">
-        <a href="#about"></a> <br>
-        <a href="#services"></a> <br>
-        <a href="#clients"></a> <br>
-        <a href="#contact"></a>
+        <a class="btn btn-danger" id="red"></a>
+        <a class="btn btn-primary" id="blue"></a>
+        <a class="btn btn-warning" id="yellow"></a>
+        <a class="btn btn-dark" id="gray"></a>
     </div>
     <script src="owl.carousel.min.js"></script>
     <script src="home.js"></script>
