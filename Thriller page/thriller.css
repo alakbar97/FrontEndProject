@@ -329,7 +329,7 @@ ul.breadcrumb li a {
     width: 1350px;
     overflow: hidden;
     padding: 10px;
-    margin-left: -341px;
+    margin-left: -452px;
 }
 
 .mega-menu a {
@@ -436,4 +436,12 @@ ul.breadcrumb li a {
 }
 .panelimg a{
     float: left;
+}
+.bodyforcard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bodyforcard .card{
+    width: 30%;
 }

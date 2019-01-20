@@ -83,6 +83,14 @@ $(document).ready(function () {
         $(".thFoot").removeClass("bg-danger bg-success bg-warning").addClass("bg-dark")
         $(".end").removeClass("bg-danger bg-success bg-warning").addClass("bg-dark")
     })
+    $(".sort").click(function() {
+        var Text2=$(this).text();
+        $(".sorting").text(Text2);
+    })
+    $(".show").click(function() {
+        var Text3=$(this).text();
+        $(".showing").text(Text3);
+    })
 })
 var acc = document.getElementsByClassName("accordion");
 var i;
