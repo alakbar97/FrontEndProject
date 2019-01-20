@@ -40,6 +40,7 @@ html {
     .secondline {
         height: 100%;
     }
+
     .foot {
         flex-direction: column;
         height: 160px !important;
@@ -150,9 +151,11 @@ ul li {
 ul li a {
     text-decoration: none !important;
 }
-.thirdpart{
+
+.thirdpart {
     display: flex;
 }
+
 .foot {
     width: 100%;
     height: 100px;
@@ -204,6 +207,7 @@ ul li a {
     font-size: 40px;
     z-index: 100;
 }
+
 .sidenav {
     height: 213px;
     width: 44px;
@@ -225,6 +229,7 @@ ul li a {
     color: #818181;
     display: block !important;
 }
+
 .colors {
     height: 10px;
     width: 25px;
@@ -247,33 +252,40 @@ ul li a {
     font-size: 24px;
     margin-left: -5px;
 }
+
 .reng a {
     display: none;
 }
+
 ul.breadcrumb {
     padding: 6px 10px;
     list-style: none;
     background-color: #eee;
-  }
-  ul.breadcrumb li {
+}
+
+ul.breadcrumb li {
     display: inline;
     font-size: 18px;
-  }
-  ul.breadcrumb li+li:before {
+}
+
+ul.breadcrumb li+li:before {
     padding: 8px;
     color: black;
     content: "/\00a0";
-  }
-  ul.breadcrumb li a {
+}
+
+ul.breadcrumb li a {
     color: #0275d8;
     text-decoration: none !important;
-  }
-  .categories{
+}
+
+.categories {
     width: 280px;
     height: 1150px;
     overflow-y: auto;
-  }
-  .accordion {
+}
+
+.accordion {
     background-color: #eee;
     color: #444;
     cursor: pointer;
@@ -284,47 +296,52 @@ ul.breadcrumb {
     outline: none;
     font-size: 15px;
     transition: 0.4s;
-  }
-  
-  .active, .accordion:hover {
+}
+
+.active,
+.accordion:hover {
     background-color: #ccc;
-  }
-  
-  .accordion:after {
+}
+
+.accordion:after {
     content: '\002B';
     color: #777;
     font-weight: bold;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active:after {
+}
+
+.active:after {
     content: "\2212";
-  }
-  
-  .panel {
+}
+
+.panel {
     width: 280px;
-    height: 316px;
+    height: 320px;
     overflow-y: auto;
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     transition: max-height 0.2s ease-out;
-  }
-  .mega-menu {
+}
+
+.mega-menu {
     width: 1350px;
     overflow: hidden;
     padding: 10px;
     margin-left: -341px;
 }
-.mega-menu a{
+
+.mega-menu a {
     text-decoration: none;
     color: cadetblue;
 }
-.mega-menu .sub-menu-heading{
+
+.mega-menu .sub-menu-heading {
     color: darkcyan;
 }
-  .slider {
+
+.slider {
     -webkit-appearance: none;
     width: 25%;
     height: 5px;
@@ -334,13 +351,13 @@ ul.breadcrumb {
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
-  }
-  
-  .slider:hover {
+}
+
+.slider:hover {
     opacity: 1;
-  }
-  
-  .slider::-webkit-slider-thumb {
+}
+
+.slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 15px;
@@ -348,12 +365,75 @@ ul.breadcrumb {
     border-radius: 50%;
     background: #4CAF50;
     cursor: pointer;
-  }
-  
-  .slider::-moz-range-thumb {
+}
+
+.slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     background: #4CAF50;
     cursor: pointer;
-  }
+}
+
+.containerlabel {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.containerlabel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.containerlabel:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.containerlabel input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.containerlabel input:checked~.checkmark:after {
+    display: block;
+}
+
+.containerlabel .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.panelimg a{
+    float: left;
+}

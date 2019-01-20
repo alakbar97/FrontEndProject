@@ -237,65 +237,119 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-                    <ul class="breadcrumb">
-                            <li><i class="fas fa-home"></i><a href="#">Home</a></li>
-                            <li><a href="#">All Movies</a></li>
-                            <li>Thriller</li>
-                          </ul>
+                <ul class="breadcrumb">
+                    <li><i class="fas fa-home"></i><a href="#">Home</a></li>
+                    <li><a href="#">All Movies</a></li>
+                    <li>Thriller</li>
+                </ul>
             </div>
             <div class="col-md-1"></div>
         </div> <br>
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-3 categories">
-                    <button class="accordion">Categories</button>
-                    <div class="panel">
-                  <p><a class="text-dark" href="#">All Categories</a></p>
-                    <p> <a class="text-dark" href="#">Crime</a></p> 
-                    <p class="text-center"> <a class="text-dark" href="#">20th Century Movies</a></p> 
-                    <p class="text-center"><a class="text-dark" href="#" >21th Century Movies</a></p>
-                    <p> <a class="text-dark" href="#">Drama</a></p> 
-                    <p class="text-center"> <a class="text-dark" href="#">20th Century Movies</a></p> 
-                    <p class="text-center"><a class="text-dark" href="#" >21th Century Movies</a></p>
-                    <p> <a class="text-dark" href="#">Thriller</a></p> 
-                    <p class="text-center"> <a class="text-dark" href="#">20th Century Movies</a></p> 
-                    <p class="text-center"><a class="text-dark" href="#" >21th Century Movies</a></p>
-                    <p> <a class="text-dark" href="#">Comedy</a></p> 
-                    <p> <a class="text-dark" href="#">Romance</a></p> 
-                    <p> <a class="text-dark" href="#">Sci-Fi</a></p> 
-                    <p> <a class="text-dark" href="#">War</a></p> 
-                    <p> <a class="text-dark" href="#">Western</a></p> 
-                    
+                <button class="accordion">Categories</button>
+                <div class="panel">
+                    <p><a class="text-dark" href="#">All Categories</a></p>
+                    <p> <a class="text-dark" href="#">Crime</a></p>
+                    <p class="text-center"> <a class="text-dark" href="#">20th Century Movies</a></p>
+                    <p class="text-center"><a class="text-dark" href="#">21th Century Movies</a></p>
+                    <p> <a class="text-dark" href="#">Drama</a></p>
+                    <p class="text-center"> <a class="text-dark" href="#">20th Century Movies</a></p>
+                    <p class="text-center"><a class="text-dark" href="#">21th Century Movies</a></p>
+                    <p> <a class="text-dark" href="#">Thriller</a></p>
+                    <p class="text-center"> <a class="text-dark" href="#">20th Century Movies</a></p>
+                    <p class="text-center"><a class="text-dark" href="#">21th Century Movies</a></p>
+                    <p> <a class="text-dark" href="#">Comedy</a></p>
+                    <p> <a class="text-dark" href="#">Romance</a></p>
+                    <p> <a class="text-dark" href="#">Sci-Fi</a></p>
+                    <p> <a class="text-dark" href="#">War</a></p>
+                    <p> <a class="text-dark" href="#">Western</a></p>
+
+                </div>
+
+                <button class="accordion">Rating</button>
+                <div class="panel">
+                    <div class="''slidecontainer" style=" width: 140px; float: left;">
+                        <p>From: <span id="demo"></span></p>
+                        <input type="range" min="1" max="10" value="50" class="slider" id="myRange" style="width: 45%;">
                     </div>
-                    
-                    <button class="accordion">Rating</button>
-                    <div class="panel">
-                            <div class="''slidecontainer" style=" width: 140px; float: left;">
-                                    <p>From: <span id="demo"></span></p>
-                                    <input type="range" min="1" max="10" value="50" class="slider" id="myRange" style="width: 45%;">
-                                  </div>
-                                  <div class="''slidecontainer2">
-                                        <p>To: <span id="demo2"></span></p>
-                                        <input type="range" min="1" max="10" value="50" class="slider" id="Range">
-                                      </div>
+                    <div class="''slidecontainer2">
+                        <p>To: <span id="demo2"></span></p>
+                        <input type="range" min="1" max="10" value="50" class="slider" id="Range">
                     </div>
-                    
-                    <button class="accordion">Type</button>
-                    <div class="panel">
-                      <p></p>
-                    </div>
-                    <button class="accordion">Released Year</button>
-                    <div class="panel">
-                      <p></p>
-                    </div>
-                    <button class="accordion">Company</button>
-                    <div class="panel">
-                      <p></p>
-                    </div>
-                    <button class="accordion">Now Available Bluray 1080p</button>
-                    <div class="panel">
-                      <p></p>
-                    </div>
+                </div>
+
+                <button class="accordion">Type</button>
+                <div class="panel" style="display: flex;justify-content: space-between;flex-direction: column;">
+                    <p><button class="btn btn-dark">Film noir</button></p>
+                    <p><button class="btn btn-info">German Expressionism</button></p>
+                    <p><button class="btn btn-success">Italian Neorealism</button></p>
+                    <p><button class="btn btn-primary">Arthouse</button></p>
+                    <p><button class="btn btn-secondary">Documentary</button></p>
+                    <p><button class="btn btn-warning">Hardboiled</button></p>
+                    <p><button class="btn btn-danger">Docufiction</button></p>
+
+                </div>
+                <button class="accordion">Released Year</button>
+                <div class="panel">
+                    <label class="containerlabel">1920s Movies
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="containerlabel">1930s Movies
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="containerlabel">1940s Movies
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="containerlabel">1950s Movies
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="containerlabel">1960s Movies
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="containerlabel">1970s Movies
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="containerlabel">1980s Movies
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="containerlabel">1990s Movies
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="containerlabel">2000s Movies
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="containerlabel">2010s Movies
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <button class="accordion">Company</button>
+                <div class="panel panelimg">
+                    <a href="#"><img src="disney.jpg" width="75px" height="75px"></a>
+                    <a href="#"><img src="dream.jpg" width="75px" height="75px"></a>
+                    <a href="#"><img src="lucas.jpg" width="75px" height="75px"></a>
+                    <a href="#"><img src="marvel.jpg" width="75px" height="75px"></a>
+                    <a href="#"><img src="miramax.jpg" width="75px" height="75px"></a>
+                    <a href="#"><img src="netflix.jpg" width="75px" height="75px"></a>
+                    <a href="#"><img src="pixar.jpg" width="75px" height="75px"></a>
+                    <a href="#"><img src="universal.jpg" width="75px" height="75px"></a>
+                    <a href="#"><img src="wb.jpg" width="75px" height="75px"></a>
+                </div>
+                <button class="accordion">Now Available Bluray 1080p</button>
+                <div class="panel">
+                    <img src="aquaman.jpg" width="220px" height="220px">
+                </div>
             </div>
             <div class="col-md-7"></div>
             <div class="col-md-1"></div>
