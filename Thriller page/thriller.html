@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thriller</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="thriller.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav id="headPart">
+            <div class=" firstline bg-success" style="height: 32px;">
+                <div class="d-flex align-items-center justify-content-around" style="border-bottom: 1px solid white;height: 100%;">
+                    <div class="firstpart">
+                        <i class="fas fa-phone text-light"></i>
+                        <span class="text-light" style="font-size: 10px;">Hotline: (+100) 123 456 7890</span>
+                    </div>
+                    <div class="secondpart">
+                        <span class="text-light" style="font-size: 12px;">Welcome to our WORLD!</span>
+                    </div>
+                    <div class="thirdpart">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-success btn-sm dropdown-toggle mny" style="font-size:13px;"
+                                data-toggle="dropdown">
+                                USD
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item money" href="#">USD</a>
+                                <a class="dropdown-item money" href="#">EURO</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-success btn-sm dropdown-toggle flg" style="font-size:13px;"
+                                data-toggle="dropdown">
+                                <img class="mainImg" src="eng.png" width="20px">
+                                <span>ENGLISH</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item flag" href="#">
+                                    <img src="eng.png" width="20px"> ENGLISH</a>
+                                <a class="dropdown-item flag" href="#">
+                                    <img src="ger.png" width="20px">GERMAN</a>
+                                <a class="dropdown-item flag" href="#">
+                                    <img src="fre.png" width="20px">FRENCH</a>
+                                <a class="dropdown-item flag" href="#">
+                                    <img src="rus.png" width="20px">RUSSIAN</a>
+                                <a class="dropdown-item flag" href="#">
+                                    <img src="tr.png" width="20px">TURKEY</a>
+                            </div>
+                        </div>
+                        <a href="#" class="comp btn btn-sm text-light">COMPARE (0)</a>
+                        <a href="#" class="wish btn btn-sm text-light">WISHLIST (0)</a>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-sm btn-success dropdown-toggle Account" data-toggle="dropdown">
+                                <i class="far fa-user"></i> ACCOUNT
+                            </button>
+                            <div class="dropdown-menu dropimg">
+                                <img src="user.jpg" style="float: left;" hspace="5">
+                                <span>Alakbarov Alakbar</span>
+                                <br>
+                                <span>alakbar_a(152
+                                    <i class="far fa-star text-warning"></i>)</span>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cog"></i> Account Settings</a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-lock"></i>Lock Screen</a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-question-circle"></i>Help</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">
+                                    <i class="fas fa-sign-out-alt"></i>SignOut</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-success secpart" style="height: 104px;">
+                <div class="d-flex justify-content-between align-items-center secondline" style="height: 100%;">
+                    <a href="#" class="text-light logo">CLASSIC MOVIES</a>
+                    <div class="search">
+                        <form class="searching">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <select class="category">
+                                        <option value="All">All Categories</option>
+                                        <optgroup label="Crime">
+                                            <option value="20thcentury">20th century movies</option>
+                                            <option value="21thcentury">21st century movies</option>
+                                        </optgroup>
+                                        <optgroup label="Drama">
+                                            <option value="20thcentury">20th century movies</option>
+                                            <option value="21thcentury">21st century movies</option>
+                                        </optgroup>
+                                        <optgroup label="Thriller">
+                                            <option value="20thcentury">20th century movies</option>
+                                            <option value="21thcentury">21st century movies</option>
+                                        </optgroup>
+                                        <option value="Comedy">Comedy</option>
+                                        <option value="Romance">Romance</option>
+                                        <option value="Western">Western</option>
+                                        <option value="War">War</option>
+                                        <option value="Sci-fi">Sci-fi</option>
+                                    </select>
+                                </div>
+                                <input type="text" class="form-control" style="border: none;" placeholder="Type to search"
+                                    id="usr" name="search" size="50">
+                                <div class="input-group-append">
+                                    <button type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-success btn-sm dropdown-toggle shop" data-toggle="dropdown">
+                            <i class="fas fa-shopping-cart" style="font-size: 28px;"></i>
+                            <span>Shopping Cart</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <p class="d-flex justify-content-around">0 item
+                                <a href="#" class="text-dark">View Cart</a>
+                            </p>
+                            <div class="dropdown-divider"></div>
+                            <p>You have no items in your shopping cart</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </nav>
+        <div class="row shadow-sm p-4 mb-4 bg-white" style="height: 48px;">
+            <div class="col-md-2"></div>
+            <div class="col-md-7 d-flex justify-content-center">
+                <nav class="navbar navbar-expand-md navbar-dark" style="z-index: 50;">
+                    <button class="btn data-toggler d-md-none" data-toggle="collapse" data-target="#elements"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div id="elements" class="collapse navbar-collapse w-100">
+                        <ul class="d-flex align-items-center nav navbar-nav">
+                            <li>
+                                <a class="text-success btn" href="#">HOME</a>
+                            </li>
+                            <li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Famous Movies
+                                </a>
+                                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <p><strong class="sub-menu-heading">60s Movies</strong></p>
+                                            <p><a href="#">The Graduate</a></p>
+                                            <p><a href="#">Night of the Living Dead</a></p>
+                                            <p><a href="#">Lawrence of Arabia</a></p>
+                                            <p><a href="#">Easy Rider</a></p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <p><strong class="sub-menu-heading">70s Movies</strong></p>
+                                            <p><a href="#">The Exorcist</a></p>
+                                            <p><a href="#">Apocalypse Now</a></p>
+                                            <p><a href="#">Star Wars Series</a></p>
+                                            <p><a href="#">The Deer Hunter</a></p>
+                                            <p><a href="#">Rocky</a></p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p><strong class="sub-menu-heading">80s Movies</strong></p>
+                                            <p><a href="#">Back to the Future</a></p>
+                                            <p><a href="#">Ghostbusters</a></p>
+                                            <p><a href="#">The Terminator</a></p>
+                                            <p><a href="#">The Shining</a></p>
+                                            <p><a href="#">Blade Runner</a></p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <img src="kubrick.jpg" class="img-fluid">
+                                            <div class="text-block">
+                                                <h4>Stanley Kubrick</h4>
+                                                <p>If it can be written, or thought, it can be filmed.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            </li>
+                            <li>
+                                <a class="text-dark btn" href="#">Thriller</a>
+                            </li>
+                            <li>
+                                <a class="text-dark btn" href="#">Comedy</a>
+                            </li>
+                            <li>
+                                <a class="text-dark btn" href="#">Drama</a>
+                            </li>
+                            <li>
+                                <a class="text-dark btn" href="#">Horror</a>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" style="background: none;" type="button" id="dropdownMenu1"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        More
+                                    </button>
+                                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                        <li class="dropdown-item"><a class="text-dark" href="#">Top-250 rated movies</a></li>
+                                        <li class="dropdown-item"><a class="text-dark" href="#">Most Viewed</a></li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" href="#">Others</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown-item"><a class="text-dark" href="#">External Link</a></li>
+                                                <li class="dropdown-item"><a class="text-dark" href="#">Menu Item</a></li>
+                                                <li class="dropdown-item"><a class="text-dark" href="#">Second Page</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a class="text-dark btn" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="foot bg-success">
+                <div class="firstFoot">
+                    <h4 class="text-light">Subscribe our Newsletter</h4>
+                    <span class="text-light">Stay up to date with our latest new and products</span>
+                </div>
+                <div class="secFoot">
+                    <form>
+                        <div class="subMail input-group mb-2" style="width:550px;">
+                            <input type="text" class="form-control" placeholder="Your email address" name="email">
+                            <div class="input-group-append">
+                                <button class="btn">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="thFoot bg-success" style="height: 10px; width:100%;display: flex;justify-content: center;">
+                <div style="height: 1px; width: 90%; background: white;"></div>
+            </div>
+            <div class="footer bg-success">
+                <div class="links">
+                    <h3 class="text-light" style="margin-left:100px;">Useful Links</h3>
+                    <a class="btn text-light" href="#">My Account</a>
+                    <a class="btn text-light" href="#">Contact</a>
+                    <a class="btn text-light" href="#">Compare</a>
+                    <a class="btn text-light" href="#">Wishlist</a>
+                    <a class="btn text-light" href="#">Checkout</a>
+                    <a class="btn text-light" href="#">FAQ</a>
+                </div>
+                <div class="information">
+                    <h3 class="text-light">Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span>2903 Avenue Z, Brooklyn, NY</span></p>
+                    <p><i class="fas fa-phone"></i> <span>(212) 457-2308</span></p>
+                    <p><i class="far fa-envelope"></i> <span>contact@emporium.com</span></p>
+                    <p><i class="far fa-clock"></i> <span>Mon - Sun / 9:00AM - 8:00PM</span></p>
+                    <p><i class="fas fa-directions"></i> <a href="#" class="text-light">Get directions</a></p>
+                    <p><i class="fas fa-bus"></i> <span>Routes to us</span></p>
+                </div>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="948" height="586" id="gmap_canvas" src="https://maps.google.com/maps?q=code%20academy&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">best
+                            wordpress themes for amp</a></div>
+                </div>
+            </div>
+            <div class="end bg-success">
+                <div style="height: 1px;background: white;width: 90%; margin-left: 62px;"></div> <br>
+                <div class="d-flex justify-content-around">
+                    <span class="text-light">Copyright © 2019 All Rights Reserved</span>
+                    <div class="d-flex justify-content-around" style="width: 500px;">
+                        <span class="text-light">Designed & Developed by Alakbar</span>
+                        <a class="text-light" href="https://themeforest.net/" target="blank">ThemForest</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>
