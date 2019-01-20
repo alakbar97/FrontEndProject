@@ -105,10 +105,10 @@ output.innerHTML = slider.value;
 slider.oninput = function() {
   output.innerHTML = this.value;
 }
-var slider = document.getElementById("Range");
-var output = document.getElementById("demo2");
-output.innerHTML = slider.value;
+var slide = document.getElementById("Range");
+var outputer = document.getElementById("demo2");
+outputer.innerHTML = slide.value;
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
+slide.oninput = function() {
+  outputer.innerHTML = this.value;
 }
