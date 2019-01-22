@@ -329,3 +329,6 @@ ul.breadcrumb li a {
 .mega-menu .sub-menu-heading {
     color: darkcyan;
 }
+.checked {
+    color: orange;
+  }
