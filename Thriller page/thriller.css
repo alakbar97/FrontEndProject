@@ -281,12 +281,14 @@ ul.breadcrumb li a {
 
 .categories {
     width: 100%;
-    overflow: scroll;
+    height: 1500px;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
 }
 #panel{
     overflow-y: scroll;
+    height: 300px;
     transition: 0.5s;
 }
 #panel2{
