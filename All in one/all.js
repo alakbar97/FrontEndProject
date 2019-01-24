@@ -83,47 +83,62 @@ $(document).ready(function () {
         $(".thFoot").removeClass("bg-danger bg-success bg-warning").addClass("bg-dark")
         $(".end").removeClass("bg-danger bg-success bg-warning").addClass("bg-dark")
     })
-    $(".sort").click(function() {
-        var Text2=$(this).text();
+    $(".sort").click(function () {
+        var Text2 = $(this).text();
         $(".sorting").text(Text2);
     })
-    $(".show").click(function() {
-        var Text3=$(this).text();
+    $(".show").click(function () {
+        var Text3 = $(this).text();
         $(".showing").text(Text3);
     })
     $('.owl-carousel').owlCarousel({
-        loop:false,
-        margin:10,
-        nav:false,
-        responsive:{
-            0:{
-                items:1
+        loop: false,
+        margin: 10,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                items:3
+            600: {
+                items: 3
             },
-            1000:{
-                items:4
+            1000: {
+                items: 4
             }
         }
     })
     $(".changer").click(function () {
-        var Image=$(this).attr("src");
-        $(".focusImg").attr("src",Image)
+        var Image = $(this).attr("src");
+        $(".focusImg").attr("src", Image)
+    })
+    var Number1 = 1;
+    $(".plus").click(function () {
+        Number1++;
+        $(".count").text(Number1)
+        if (Number1 > 3) {
+            alert("You cannot get more than 3 files");
+        }
+    })
+    $(".minus").click(function () {
+        if (Number1 > 1) {
+            Number1--;
+            $(".count").text(Number1)
+        }
     })
 })
+
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+        tabcontent[i].style.display = "none";
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
-  }
-  
-  document.getElementById("defaultOpen").click();
+}
+
+document.getElementById("defaultOpen").click();
