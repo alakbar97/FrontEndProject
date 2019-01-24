@@ -107,6 +107,10 @@ $(document).ready(function () {
             }
         }
     })
+    $(".changer").click(function () {
+        var Image=$(this).attr("src");
+        $(".focusImg").attr("src",Image)
+    })
 })
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
