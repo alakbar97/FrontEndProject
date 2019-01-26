@@ -111,12 +111,13 @@ $(document).ready(function () {
         var Image = $(this).attr("src");
         $(".focusImg").attr("src", Image)
     })
-    var Number1 = 1;
+    var Number1 = 0;
     $(".plus").click(function () {
         Number1++;
         $(".count").text(Number1)
-        if (Number1 > 3) {
+        if (Number1 == 3) {
             alert("You cannot get more than 3 files");
+            $(".plus").prop("disabled",true)
         }
     })
     $(".minus").click(function () {
