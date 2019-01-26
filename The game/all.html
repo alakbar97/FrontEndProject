@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>All in One</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <a class="uphead" href="#headPart"><i class="fas fa-arrow-up"></i></a>
+        <nav id="headPart">
+            <div class=" firstline bg-success" style="height: 32px;">
+                <div class="d-flex align-items-center justify-content-around" style="border-bottom: 1px solid white;height: 100%;">
+                    <div class="firstpart">
+                        <i class="fas fa-phone text-light"></i>
+                        <span class="text-light" style="font-size: 10px;">Hotline: (+100) 123 456 7890</span>
+                    </div>
+                    <div class="secondpart">
+                        <span class="text-light" style="font-size: 12px;">Welcome to our WORLD!</span>
+                    </div>
+                    <div class="thirdpart">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-success btn-sm dropdown-toggle mny" style="font-size:13px;"
+                                data-toggle="dropdown">
+                                USD
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item money" href="#">USD</a>
+                                <a class="dropdown-item money" href="#">EURO</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-success btn-sm dropdown-toggle flg" style="font-size:13px;"
+                                data-toggle="dropdown">
+                                <img class="mainImg" src="eng.png" width="20px">
+                                <span>ENGLISH</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item flag" href="#">
+                                    <img src="eng.png" width="20px"> ENGLISH</a>
+                                <a class="dropdown-item flag" href="#">
+                                    <img src="ger.png" width="20px">GERMAN</a>
+                                <a class="dropdown-item flag" href="#">
+                                    <img src="fre.png" width="20px">FRENCH</a>
+                                <a class="dropdown-item flag" href="#">
+                                    <img src="rus.png" width="20px">RUSSIAN</a>
+                                <a class="dropdown-item flag" href="#">
+                                    <img src="tr.png" width="20px">TURKEY</a>
+                            </div>
+                        </div>
+                        <a href="#" class="comp btn btn-sm text-light">COMPARE (0)</a>
+                        <a href="#" class="wish btn btn-sm text-light">WISHLIST (0)</a>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-sm btn-success dropdown-toggle Account" data-toggle="dropdown">
+                                <i class="far fa-user"></i> ACCOUNT
+                            </button>
+                            <div class="dropdown-menu dropimg">
+                                <img src="user.jpg" style="float: left;" hspace="5">
+                                <span>Alakbarov Alakbar</span>
+                                <br>
+                                <span>alakbar_a(152
+                                    <i class="far fa-star text-warning"></i>)</span>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cog"></i> Account Settings</a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-lock"></i>Lock Screen</a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-question-circle"></i>Help</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">
+                                    <i class="fas fa-sign-out-alt"></i>SignOut</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-success secpart" style="height: 104px;">
+                <div class="d-flex justify-content-between align-items-center secondline" style="height: 100%;">
+                    <a href="../Home Page/home.html" class="text-light logo">CLASSIC MOVIES</a>
+                    <div class="search">
+                        <form class="searching">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <select class="category">
+                                        <option value="All">All Categories</option>
+                                        <optgroup label="Crime">
+                                            <option value="20thcentury">20th century movies</option>
+                                            <option value="21thcentury">21st century movies</option>
+                                        </optgroup>
+                                        <optgroup label="Drama">
+                                            <option value="20thcentury">20th century movies</option>
+                                            <option value="21thcentury">21st century movies</option>
+                                        </optgroup>
+                                        <optgroup label="Thriller">
+                                            <option value="20thcentury">20th century movies</option>
+                                            <option value="21thcentury">21st century movies</option>
+                                        </optgroup>
+                                        <option value="Comedy">Comedy</option>
+                                        <option value="Romance">Romance</option>
+                                        <option value="Western">Western</option>
+                                        <option value="War">War</option>
+                                        <option value="Sci-fi">Sci-fi</option>
+                                    </select>
+                                </div>
+                                <input type="text" class="form-control" style="border: none;" placeholder="Type to search"
+                                    id="usr" name="search" size="50">
+                                <div class="input-group-append">
+                                    <button type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-success btn-sm dropdown-toggle shop" data-toggle="dropdown">
+                            <i class="fas fa-shopping-cart" style="font-size: 28px;"></i>
+                            <span>Shopping Cart</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <p class="d-flex justify-content-around">0 item
+                                <a href="#" class="text-dark">View Cart</a>
+                            </p>
+                            <div class="dropdown-divider"></div>
+                            <p>You have no items in your shopping cart</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </nav>
+        <div class="row shadow-sm p-4 mb-4 bg-white" style="height: 48px;">
+            <div class="col-md-3"></div>
+            <div class="col-md-7 d-flex justify-content-center">
+                <nav class="navbar navbar-expand-md navbar-dark" style="z-index: 50;">
+                    <button class="btn data-toggler d-md-none" data-toggle="collapse" data-target="#elements"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div id="elements" class="collapse navbar-collapse" style="width: 700px;">
+                        <ul class="d-flex align-items-center nav navbar-nav">
+                            <li>
+                                <a class="text-success btn" href="#">HOME</a>
+                            </li>
+                            <li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Famous Movies
+                                </a>
+                                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <p><strong class="sub-menu-heading">60s Movies</strong></p>
+                                            <p><a href="#">The Graduate</a></p>
+                                            <p><a href="#">Night of the Living Dead</a></p>
+                                            <p><a href="#">Lawrence of Arabia</a></p>
+                                            <p><a href="#">Easy Rider</a></p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <p><strong class="sub-menu-heading">70s Movies</strong></p>
+                                            <p><a href="#">The Exorcist</a></p>
+                                            <p><a href="#">Apocalypse Now</a></p>
+                                            <p><a href="#">Star Wars Series</a></p>
+                                            <p><a href="#">The Deer Hunter</a></p>
+                                            <p><a href="#">Rocky</a></p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p><strong class="sub-menu-heading">80s Movies</strong></p>
+                                            <p><a href="#">Back to the Future</a></p>
+                                            <p><a href="#">Ghostbusters</a></p>
+                                            <p><a href="#">The Terminator</a></p>
+                                            <p><a href="#">The Shining</a></p>
+                                            <p><a href="#">Blade Runner</a></p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <img src="kubrick.jpg" class="img-fluid">
+                                            <div class="text-block">
+                                                <h4>Stanley Kubrick</h4>
+                                                <p>If it can be written, or thought, it can be filmed.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            </li>
+                            <li>
+                                <a class="text-dark btn" href="../Thriller page/thriller.html">Thriller</a>
+                            </li>
+                            <li>
+                                <a class="text-dark btn" href="#">Comedy</a>
+                            </li>
+                            <li>
+                                <a class="text-dark btn" href="#">Drama</a>
+                            </li>
+                            <li>
+                                <a class="text-dark btn" href="#">Horror</a>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" style="background: none;" type="button" id="dropdownMenu1"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        More
+                                    </button>
+                                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                        <li class="dropdown-item"><a class="text-dark" href="../Thriller page/thriller.html">Top-250 rated movies</a></li>
+                                        <li class="dropdown-item"><a class="text-dark" href="../All in one/all.html">Most Viewed</a></li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" href="#">Others</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown-item"><a class="text-dark" href="#">External Link</a></li>
+                                                <li class="dropdown-item"><a class="text-dark" href="#">Menu Item</a></li>
+                                                <li class="dropdown-item"><a class="text-dark" href="#">Second Page</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a class="text-dark btn" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <ul class="breadcrumb">
+                    <li><i class="fas fa-home"></i><a href="#">Home</a></li>
+                    <li><a href="#">All Movies</a></li>
+                    <li>Movie All in One</li>
+                </ul>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-3" style="height: 500px">
+                <div>
+                    <img class="focusImg" src="game.jpg" width="340px" height="300px">
+                </div> <br>
+                <div class="owl-carousel owl-theme" style="width: 340px">
+                    <div class="item"><img class="changer" src="game1.jpg" width="100px" height="90px"></div>
+                    <div class="item"><img class="changer" src="game2.jpg" width="100px" height="90px"></div>
+                    <div class="item"><img class="changer" src="game3.jpg" width="100px" height="90px"></div>
+                    <div class="item"><img class="changer" src="game4.jpg" width="100px" height="90px"></div>
+                    <div class="item"><img class="changer" src="game5.jpg" width="100px" height="90px"></div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h3>Cape Fear All in one</h3> <br>
+                <span>Category:Drama</span> <br>
+                <span>Quality:720p Bluray,1080p Bluray</span> <br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span>8 Rating</span> <br> <br>
+                <p>24 hours in L.A.; it's raining cats and dogs. Two parallel and intercut stories dramatize men about
+                    to die: both are estranged from a grown child, both want to make contact, and neither child wants
+                    anything to do with dad. Earl Partridge's son is a charismatic misogynist; Jimmy Gator's daughter
+                    is a cokehead and waif. </p>
+                <div class="line" style="width: 100%;background: black;height: 1px;"></div> <br>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <span>Select Language :</span>
+                        <button class="btn btn-info">English</button>
+                        <button class="btn btn-danger">Russian</button>
+                    </div>
+                    <div>
+                        <span>Select Quality:</span>
+                        <button class="btn">720p</button>
+                        <button class="btn">1080p</button>
+                    </div>
+                </div> <br>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <span>Quantity:</span>
+                        <button class="btn text-dark minus" style="background: none;border: none"><i class="fas fa-minus"></i></button>
+                        <span class="count" style="font-size: 22px">1</span>
+                        <button class="btn text-dark plus" style="background: none;border: none"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="d-flex justify-content-around" style="width: 104px;">
+                        <button class="btn text-dark" style="background: none;border: none"><i class="fas fa-heart"></i></button>
+                        <button class="btn text-dark" style="background: none;border: none"><i class="fas fa-shopping-cart"></i></button>
+                        <button class="btn text-dark" style="background: none;border: none"><i class="fas fa-compress-arrows-alt"></i></button>
+                    </div>
+                </div>
+                <div class="line" style="width: 100%;background: black;height: 1px;"></div> <br>
+                <div class="d-flex justify-content-between">
+                    <button class="btn text-dark" style="background: none;border: none"><i class="far fa-envelope"></i>
+                        Email to Friend</button>
+                    <button class="btn text-dark" style="background: none;border: none"><i class="fas fa-network-wired"></i></button>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div style="background: #e1e1e1">
+                    <i style="    float: left;font-size: 42px;margin-top: 20px;" class="fas fa-gift"></i>
+                    <h4>BONUS PLUS</h4>
+                    <p>Make fun of watching and collect bonuses</p>
+                </div>
+                <div style="background: #e1e1e1">
+                    <i style="    float: left;font-size: 42px;margin-top: 20px;" class="fas fa-dollar-sign"></i>
+                    <h4>Money Back</h4>
+                    <p>You can buy lots of movies</p>
+                </div>
+                <div style="background: #e1e1e1">
+                    <i style="    float: left;font-size: 42px;margin-top: 20px;" class="far fa-clock"></i>
+                    <h6>ONLINE SUPPORT 24/7</h6>
+                    <p>Call us: (+100) 123 456 7890</p>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div> <br>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8 shadow-lg p-4 mb-4 bg-white">
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'Description')" id="defaultOpen">Description</button>
+                    <button class="tablinks" onclick="openTab(event, 'Additional Information')">Additional Information</button>
+                    <button class="tablinks" onclick="openTab(event, 'Reviews')">Reviews</button>
+                </div>
+
+                <div id="Description" class="tabcontent">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id nulla metus. Maecenas commodo
+                        turpis dui, porttitor tincidunt enim mollis a. Curabitur eu velit mi. Nullam congue turpis id
+                        metus sollicitudin, id cursus nulla laoreet. Proin commodo eu felis at malesuada. Nulla ac
+                        facilisis justo, eget vulputate ex. Nulla nec laoreet nulla. Cras auctor leo at diam congue,
+                        quis convallis urna pulvinar. Nunc ut mi nulla. Nunc ligula massa, vulputate sed scelerisque
+                        sit amet, dapibus semper est. Sed sed blandit turpis. Vestibulum id porttitor ligula, at
+                        iaculis ligula. Pellentesque vel tellus sit amet mauris aliquet bibendum id et lorem.
+                        <li>Phasellus eu justo dictum, varius eros ut, posuere sapien.</li>
+                        <li>Phasellus eu justo dictum, varius eros ut, posuere sapien.</li>
+                        <li>Phasellus eu justo dictum, varius eros ut, posuere sapien.</li>
+                        <li>Phasellus eu justo dictum, varius eros ut, posuere sapien.</li>
+                        <li>Phasellus eu justo dictum, varius eros ut, posuere sapien.</li> <br>
+                        Duis eu felis ultricies urna pharetra efficitur nec non elit. Class aptent taciti sociosqu ad
+                        litora torquent per conubia nostra, per inceptos himenaeos. Curabitur posuere eu justo eget
+                        mollis. Sed semper accumsan urna vel rutrum. Nulla condimentum quis lacus ut semper. Quisque at
+                        massa pretium, porta ligula ut, rutrum elit. Pellentesque et orci sit amet dolor laoreet tempor
+                        sed eu sem. Morbi lacinia pellentesque tellus euismod eleifend. <br> <br>
+
+                        Quisque fringilla eros id ligula luctus, a gravida augue sodales. Sed eget augue ut lectus
+                        condimentum volutpat. Morbi quis nunc viverra, gravida arcu quis, varius metus. Praesent
+                        tincidunt ipsum est, quis molestie ligula efficitur ut. Nunc interdum erat eu tortor maximus
+                        suscipit. Vivamus nec laoreet dui. Nullam dignissim laoreet metus quis pretium.
+                    </p>
+                </div>
+
+                <div id="Additional Information" class="tabcontent">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.
+                        <li>Phasellus eu justo dictum, varius eros ut, posuere sapien.</li>
+                        <li>Phasellus eu justo dictum, varius eros ut, posuere sapien.</li>
+                        <li>Phasellus eu justo dictum, varius eros ut, posuere sapien.</li>
+                        <li>Phasellus eu justo dictum, varius eros ut, posuere sapien.</li>
+                        <li>Phasellus eu justo dictum, varius eros ut, posuere sapien.</li>
+                        <li>Morbi dapibus ligula at faucibus tempus. Aenean vehicula, tortor gravida elementum
+                            tincidunt, justo lorem vestibulum ex, eget egestas arcu tellus in magna. Vivamus gravida,
+                            ipsum vel luctus luctus, nisi felis vestibulum est, nec interdum tellus leo quis tellus.
+                            Sed sit amet convallis enim, in laoreet orci.</li>
+                        <li>Duis aliquam urna in sapien cursus consequat. Aenean vehicula, tortor gravida elementum
+                            tincidunt, justo lorem vestibulum ex, eget egestas arcu tellus in magna. Vivamus gravida,
+                            ipsum vel luctus luctus, nisi felis vestibulum est, nec interdum tellus leo quis tellus.
+                            Sed sit amet convallis enim, in laoreet orci.</li>
+                        <br>
+                    </p>
+                </div>
+
+                <div id="Reviews" class="tabcontent">
+                    <div class="d-flex">
+                        <img src="avatar-1.png" width="80px" height="80px" style="float: left;" hspace="20">
+                        <div>
+                            Ali Aliyev <i class="far fa-frown-open" title="dissatisfied"></i> <br>
+                            <p class="text-muted">13 January, 2019 at 5:21</p> <br>
+                            Integer id eros et mi fringilla imperdiet. In dictum turpis eget magna viverra condimentum.
+                            Ut malesuada interdum ultrices. Proin tristique sem pellentesque, posuere dui in, maximus
+                            magna. Aenean vehicula, tortor gravida elementum tincidunt, justo lorem vestibulum ex, eget
+                            egestas arcu tellus in magna.
+                        </div>
+                    </div> <br>
+                    <div class="d-flex">
+                        <img src="avatar-2.png" width="80px" height="80px" style="float: left;" hspace="20">
+                        <div>
+                            Aliye Aliyeva <i class="far fa-smile" title="satisfied"></i> <br>
+                            <p class="text-muted">13 January, 2019 at 5:21</p> <br>
+                            Integer id eros et mi fringilla imperdiet. In dictum turpis eget magna viverra condimentum.
+                            Ut malesuada interdum ultrices. Proin tristique sem pellentesque, posuere dui in, maximus
+                            magna. Aenean vehicula, tortor gravida elementum tincidunt, justo lorem vestibulum ex, eget
+                            egestas arcu tellus in magna.
+                        </div>
+                    </div> <br>
+                    <div class="d-flex">
+                        <img src="avatar-3.png" width="80px" height="80px" style="float: left;" hspace="20">
+                        <div>
+                            Ali Aliyev <i class="far fa-meh" title="Neutral!"></i> <br>
+                            <p class="text-muted">13 January, 2019 at 5:21</p> <br>
+                            Integer id eros et mi fringilla imperdiet. In dictum turpis eget magna viverra condimentum.
+                            Ut malesuada interdum ultrices. Proin tristique sem pellentesque, posuere dui in, maximus
+                            magna. Aenean vehicula, tortor gravida elementum tincidunt, justo lorem vestibulum ex, eget
+                            egestas arcu tellus in magna.
+                        </div>
+                    </div> <br>
+                    <b style="font-size: 25px;">Leave Your Review</b>
+                    <div class="line" style="width: 80%;background: black;height: 1px;"></div> <br>
+                    <p class="text-muted">Your email address will not be published. Required fields are marked *</p>
+                    <br>
+                    <span style="font-size: 20px;">Your Rating :</span> <i style="font-size: 30px;" class="far fa-frown-open"
+                        title="dissatisfied"></i><i class="far fa-meh" style="font-size: 30px;" title="Neutral"></i><i
+                        style="font-size: 30px;" class="far fa-smile" title="satisfied"></i> <br>
+                    <textarea rows="2" cols="100" placeholder="Your Review"></textarea> <br> <br> <br>
+                    <div class="inp">
+                        <input type="text" size="47" placeholder="Your Name">
+                        <input type="email" size="47" name="email" placeholder="Your Email">
+                    </div> <br>
+                    <button style="margin-left: 40%;" class="btn btn-success">Submit Review</button> <br>
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div style="height:190px; background: #e1e1e1">
+                    <h3 style="text-align: center;line-height: 7;">Banner 1</h3>
+                </div> <br>
+                <div style="height:190px; background: #e1e1e1">
+                    <h3 style="text-align: center;line-height: 7;">Banner 2</h3>
+                </div> <br>
+                <div style="height:190px; background: #e1e1e1">
+                    <h3 style="text-align: center;line-height: 7;">Banner 3</h3>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div> <br>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h3>Related Movies</h3>
+                <div class="line" style="width: 100%;background: black;height: 1px;"></div>
+                <br>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
+                            <img class="card-img-top" src="Magnolia.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Magnolia</h5>
+                                <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 8.0</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-around">
+                                <a href="#" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                                <a href="#" title="Add to card"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" title="Add to compare"><i class="fas fa-compress-arrows-alt"></i></a>
+                                <a href="#" title="Quick View"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
+                            <img class="card-img-top" src="capefear.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Cape Fear</h5>
+                                <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 7.8</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-around">
+                                <a href="#" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                                <a href="#" title="Add to card"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" title="Add to compare"><i class="fas fa-compress-arrows-alt"></i></a>
+                                <a href="#" title="Quick View"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
+                            <img class="card-img-top" src="getout.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Get Out</h5>
+                                <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 7.7</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-around">
+                                <a href="#" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                                <a href="#" title="Add to card"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" title="Add to compare"><i class="fas fa-compress-arrows-alt"></i></a>
+                                <a href="#" title="Quick View"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
+                            <img class="card-img-top" src="looper.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Looper</h5>
+                                <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 7.4</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-around">
+                                <a href="#" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                                <a href="#" title="Add to card"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" title="Add to compare"><i class="fas fa-compress-arrows-alt"></i></a>
+                                <a href="#" title="Quick View"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
+                            <img class="card-img-top" src="psy.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Psycho</h5>
+                                <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 8.5</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-around">
+                                <a href="#" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                                <a href="#" title="Add to card"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" title="Add to compare"><i class="fas fa-compress-arrows-alt"></i></a>
+                                <a href="#" title="Quick View"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card shadow-lg p-4 mb-4 bg-white" style="width: 100%;">
+                            <img class="card-img-top" src="zodiac.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Zodiac</h5>
+                                <p class="card-text">IMDB RATING: <i class="text-warning fas fa-star"></i> 7.7</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-around">
+                                <a href="#" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                                <a href="#" title="Add to card"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" title="Add to compare"><i class="fas fa-compress-arrows-alt"></i></a>
+                                <a href="#" title="Quick View"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="foot bg-success">
+            <div class="firstFoot">
+                <h4 class="text-light">Subscribe our Newsletter</h4>
+                <span class="text-light">Stay up to date with our latest new and products</span>
+            </div>
+            <div class="secFoot">
+                <form>
+                    <div class="subMail input-group mb-2" style="width:550px;">
+                        <input type="text" class="form-control" placeholder="Your email address" name="email">
+                        <div class="input-group-append">
+                            <button class="btn">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="thFoot bg-success" style="height: 10px; width:100%;display: flex;justify-content: center;">
+            <div style="height: 1px; width: 90%; background: white;"></div>
+        </div>
+        <div class="footer bg-success">
+            <div class="links">
+                <h3 class="text-light" style="margin-left:100px;">Useful Links</h3>
+                <a class="btn text-light" href="#">My Account</a>
+                <a class="btn text-light" href="#">Contact</a>
+                <a class="btn text-light" href="#">Compare</a>
+                <a class="btn text-light" href="#">Wishlist</a>
+                <a class="btn text-light" href="#">Checkout</a>
+                <a class="btn text-light" href="#">FAQ</a>
+            </div>
+            <div class="information">
+                <h3 class="text-light">Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> <span>2903 Avenue Z, Brooklyn, NY</span></p>
+                <p><i class="fas fa-phone"></i> <span>(212) 457-2308</span></p>
+                <p><i class="far fa-envelope"></i> <span>contact@emporium.com</span></p>
+                <p><i class="far fa-clock"></i> <span>Mon - Sun / 9:00AM - 8:00PM</span></p>
+                <p><i class="fas fa-directions"></i> <a href="#" class="text-light">Get directions</a></p>
+                <p><i class="fas fa-bus"></i> <span>Routes to us</span></p>
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="948" height="586" id="gmap_canvas" src="https://maps.google.com/maps?q=code%20academy&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">best
+                        wordpress themes for amp</a></div>
+            </div>
+        </div>
+        <div class="end bg-success">
+            <div style="height: 1px;background: white;width: 90%; margin-left: 62px;"></div> <br>
+            <div class="d-flex justify-content-around">
+                <span class="text-light">Copyright © 2019 All Rights Reserved</span>
+                <div class="d-flex justify-content-around" style="width: 500px;">
+                    <span class="text-light">Designed & Developed by Alakbar</span>
+                    <a class="text-light" href="https://themeforest.net/" target="blank">ThemForest</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="lefter"><i class="fas fa-palette"></i></button>
+        <div class="reng">
+            <a class="btn btn-danger" id="red"></a>
+            <a class="btn btn-primary" id="blue"></a>
+            <a class="btn btn-warning" id="yellow"></a>
+            <a class="btn btn-dark" id="gray"></a>
+        </div>
+
+        <script src="owl.carousel.min.js"></script>
+        <script src="all.js"></script>
+</body>
+
+</html>
