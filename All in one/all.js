@@ -124,6 +124,7 @@ $(document).ready(function () {
         if (Number1 > 1) {
             Number1--;
             $(".count").text(Number1)
+            $(".plus").prop("disabled",false)
         }
     })
 })
