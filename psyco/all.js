@@ -127,6 +127,18 @@ $(document).ready(function () {
             $(".plus").prop("disabled",false)
         }
     })
+    $("textarea").focus(function(){
+        $("textarea").css({"border":"1px solid red"})
+      $(".review").css({"margin-left":"4px","margin-top":"-24px","color":"red"});
+  });
+  $(".yoname").focus(function() {
+      $(".yoname").css({"border":"1px solid red"})
+      $(".yname").css({"margin-top":"-22px","color":"red"})
+  })
+  $(".ymail").focus(function() {
+    $(".ymail").css({"border":"1px solid red"})
+    $(".mail").css({"margin-top":"-22px","color":"red"})
+})
 })
 
 function openTab(evt, tabName) {

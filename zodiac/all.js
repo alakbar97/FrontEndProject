@@ -117,15 +117,43 @@ $(document).ready(function () {
         $(".count").text(Number1)
         if (Number1 == 3) {
             alert("You cannot get more than 3 files");
-            $(".plus").prop("disabled",true)
+            $(".plus").prop("disabled", true)
         }
     })
     $(".minus").click(function () {
         if (Number1 > 1) {
             Number1--;
             $(".count").text(Number1)
-            $(".plus").prop("disabled",false)
+            $(".plus").prop("disabled", false)
         }
+    })
+    $("textarea").focus(function () {
+        $("textarea").css({
+            "border": "1px solid red"
+        })
+        $(".review").css({
+            "margin-left": "4px",
+            "margin-top": "-24px",
+            "color": "red"
+        });
+    });
+    $(".yoname").focus(function () {
+        $(".yoname").css({
+            "border": "1px solid red"
+        })
+        $(".yname").css({
+            "margin-top": "-22px",
+            "color": "red"
+        })
+    })
+    $(".ymail").focus(function () {
+        $(".ymail").css({
+            "border": "1px solid red"
+        })
+        $(".mail").css({
+            "margin-top": "-22px",
+            "color": "red"
+        })
     })
 })
 

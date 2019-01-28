@@ -383,3 +383,21 @@ textarea {
     border: none;
     border-bottom: 1px solid #e1e1e1;
 }
+
+.review {
+    margin-left: 4px;
+    margin-top: 12px;
+    position: absolute;
+}
+
+.yname {
+    margin-left: 3px;
+    margin-top: 0px;
+    position: absolute;
+}
+
+.mail {
+    margin-left: 5px;
+    margin-top: 0px;
+    position: absolute;
+}
