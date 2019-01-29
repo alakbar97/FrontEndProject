@@ -91,56 +91,8 @@ $(document).ready(function () {
         var Text3 = $(this).text();
         $(".showing").text(Text3);
     })
-    $('.owl-carousel').owlCarousel({
-        loop: false,
-        margin: 10,
-        nav: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 4
-            }
-        }
-    })
     $(".changer").click(function () {
         var Image = $(this).attr("src");
         $(".focusImg").attr("src", Image)
     })
-    var Number1 = 0;
-    $(".plus").click(function () {
-        Number1++;
-        $(".count").text(Number1)
-        if (Number1 == 3) {
-            alert("You cannot get more than 3 files");
-            $(".plus").prop("disabled",true)
-        }
-    })
-    $(".minus").click(function () {
-        if (Number1 > 1) {
-            Number1--;
-            $(".count").text(Number1)
-            $(".plus").prop("disabled",false)
-        }
-    })
 })
-
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-  
-  document.getElementById("defaultOpen").click();
