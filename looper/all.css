@@ -398,3 +398,6 @@ textarea {
     margin-top: 0px;
     position: absolute;
 }
+.container-fluid{
+    overflow-x: hidden;
+}
