@@ -83,8 +83,8 @@ $(document).ready(function () {
         $(".thFoot").removeClass("bg-danger bg-success bg-warning").addClass("bg-dark")
         $(".end").removeClass("bg-danger bg-success bg-warning").addClass("bg-dark")
     })
-    $(".row input").click(function() {
+    $(".row input").focus(function() {
         $(this).prev("label").css({"margin-top":"-2%","color":"red"})
-        $(this).css({"border":"1px solid red"})
+        $(this).css({"border-bottom":"1px solid red"})
     })
 })
