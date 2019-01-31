@@ -429,7 +429,7 @@ textarea {
     height: 1px;
     width: 65px;
     margin-top: 20px;
-    margin-left: 640px;
+    margin-left: 650px;
 }
 .line3{
     background: #666;
@@ -438,4 +438,12 @@ textarea {
     width: 82px;
     margin-top: 20px;
     margin-left: -3px;
+}
+.row input{
+    border:none;
+    border-bottom: 1px solid #666;
+    outline: none;
+}
+.row label{
+    position: absolute;
 }

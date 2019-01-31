@@ -83,16 +83,8 @@ $(document).ready(function () {
         $(".thFoot").removeClass("bg-danger bg-success bg-warning").addClass("bg-dark")
         $(".end").removeClass("bg-danger bg-success bg-warning").addClass("bg-dark")
     })
-    $(".sort").click(function () {
-        var Text2 = $(this).text();
-        $(".sorting").text(Text2);
-    })
-    $(".show").click(function () {
-        var Text3 = $(this).text();
-        $(".showing").text(Text3);
-    })
-    $(".changer").click(function () {
-        var Image = $(this).attr("src");
-        $(".focusImg").attr("src", Image)
+    $(".row input").click(function() {
+        $(this).prev("label").css({"margin-top":"-2%","color":"red"})
+        $(this).css({"border":"1px solid red"})
     })
 })
