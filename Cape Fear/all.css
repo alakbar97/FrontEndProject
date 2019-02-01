@@ -6,7 +6,16 @@ html {
     scroll-behavior: smooth;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 932px) {
+    .wish, .comp, .respo, #elements{
+        display: none;
+    }
+    .resp{
+        display: block !important;
+    }
+    .openbtn{
+        display: block !important;
+    }
 
     .firstline {
         width: 100%;
@@ -400,4 +409,62 @@ textarea {
 }
 .container-fluid{
     overflow-x: hidden;
+}
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 481px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 20px;
+    background: none;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    display: none;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+.resp{
+    display: none;
 }

@@ -22,6 +22,48 @@
         <nav id="headPart">
             <div class=" firstline bg-success" style="height: 32px;">
                 <div class="d-flex align-items-center justify-content-around" style="border-bottom: 1px solid white;height: 100%;">
+                    <div id="mySidepanel" class="sidepanel">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#">HOME</a>
+                        <button class="dropdown-btn">Famous Movies
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container" style="display: none;">
+                            <a class="dropdown-btn">60s Movies
+                                <i class="fa fa-caret-down"></i>
+                            </a>
+                            <div class="dropdown-container" style="display: none;">
+                                <a href="#">Movies1</a>
+                                <a href="#">Movies3</a>
+                                <a href="#">Movies2</a>
+                            </div>
+                            <a href="#">70s Movies</a>
+                            <a href="#">80s Movies</a>
+                        </div>
+                        <a href="../Thriller page/thriller.html">Thriller</a>
+                        <a href="#">Comedy</a>
+                        <a href="#">Drama</a>
+                        <a href="#">Horror</a>
+                        <a class="dropdown-btn">More
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-container" style="display: none;">
+                            <a href="#">Movies1</a>
+                            <a href="#">Movies3</a>
+                            <a href="#">Movies2</a>
+                        </div>
+                        <a href="#">Contact</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="d-flex justify-content-around">
+                            <i style="font-size: 40px;" class="fab fa-facebook-square"></i>
+                            <i style="font-size: 40px;" class="fab fa-twitter-square"></i>
+                            <i style="font-size: 40px;" class="fab fa-google-plus-g"></i>
+                        </div>
+                    </div>
+
+                    <button class="openbtn btn" onclick="openNav()">☰</button>
+
                     <div class="firstpart">
                         <i class="fas fa-phone text-light"></i>
                         <span class="text-light" style="font-size: 10px;">Hotline: (+100) 123 456 7890</span>
@@ -59,9 +101,9 @@
                                     <img src="tr.png" width="20px">TURKEY</a>
                             </div>
                         </div>
-                        <a href="#" class="comp btn btn-sm text-light">COMPARE (0)</a>
-                        <a href="#" class="wish btn btn-sm text-light">WISHLIST (0)</a>
-                        <div class="dropdown">
+                        <a href="#" class="comp btn btn-sm text-light">COMPARE (<span class="czero">0</span>)</a>
+                        <a href="#" class="wish btn btn-sm text-light">WISHLIST (<span class="zero">0</span>)</a>
+                        <div class="dropdown respo">
                             <button type="button" class="btn btn-sm btn-success dropdown-toggle Account" data-toggle="dropdown">
                                 <i class="far fa-user"></i> ACCOUNT
                             </button>
@@ -78,6 +120,29 @@
                                     <i class="fas fa-lock"></i>Lock Screen</a>
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-question-circle"></i>Help</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">
+                                    <i class="fas fa-sign-out-alt"></i>SignOut</a>
+                            </div>
+                        </div>
+                        <div class="dropdown resp">
+                            <button type="button" class="btn btn-sm btn-success dropdown-toggle Account" data-toggle="dropdown">
+                                <i class="far fa-user"></i></button>
+                            <div class="dropdown-menu dropimg">
+                                <img src="user.jpg" style="float: left;" hspace="5">
+                                <span>Alakbarov Alakbar</span>
+                                <br>
+                                <span>alakbar_a(152
+                                    <i class="far fa-star text-warning"></i>)</span>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cog"></i> Account Settings</a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-lock"></i>Lock Screen</a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-question-circle"></i>Help</a>
+                                <a href="#" class="comp btn btn-sm text-dark">COMPARE (<span class="czero">0</span>)</a>
+                                <a href="#" class="wish btn btn-sm text-dark">WISHLIST (<span class="zero">0</span>)</a>
                                 <div class="dropdown-divider"></div>
                                 <a href="#" class="dropdown-item">
                                     <i class="fas fa-sign-out-alt"></i>SignOut</a>

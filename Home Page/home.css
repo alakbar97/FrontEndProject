@@ -10,8 +10,16 @@ html {
     overflow-x: hidden;
 }
 
-@media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 932px) {
+    .wish, .comp, .respo, #elements{
+        display: none;
+    }
+    .resp{
+        display: block !important;
+    }
+    .openbtn{
+        display: block !important;
+    }
     .firstline {
         width: 100%;
         height: 50px !important;
@@ -623,14 +631,9 @@ ul li a {
 .sidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    color: black;
     display: block;
     transition: 0.3s;
-}
-
-.sidepanel a:hover {
-    color: #f1f1f1;
 }
 
 .sidepanel .closebtn {
@@ -646,6 +649,7 @@ ul li a {
     color: white;
     padding: 10px 15px;
     border: none;
+    display: none;
 }
 
 .fa-caret-down {
@@ -665,4 +669,7 @@ ul li a {
     text-align: left;
     cursor: pointer;
     outline: none;
+}
+.resp{
+    display: none;
 }
