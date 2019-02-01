@@ -83,6 +83,20 @@ $(document).ready(function () {
         $(".thFoot").removeClass("bg-danger bg-success bg-warning").addClass("bg-dark")
         $(".end").removeClass("bg-danger bg-success bg-warning").addClass("bg-dark")
     })
+    $('.heart').on('click', function () {
+        var count = parseInt($(this).data('click'), 10) || 0;
+        count++;
+        $(this).data('click',count);
+        if(count==1){
+            alert("it is added your wishlist");
+            $(".zero").text(count); 
+        }
+        else{
+            alert("it is already added")
+        }
+        return false;
+           
+      });
 })
 $('.owl-carousel').owlCarousel({
     loop: false,
