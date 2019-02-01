@@ -116,7 +116,7 @@ $(document).ready(function () {
         Number1++;
         $(".count").text(Number1)
         if (Number1 == 3) {
-            alert("You cannot get more than 3 files");
+            setTimeout(function(){ alert("You cannot get more than 3 files"); }, 500);
             $(".plus").prop("disabled",true)
         }
     })
