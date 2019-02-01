@@ -21,7 +21,10 @@ $(document).ready(function () {
     $(".lefter").click(function () {
         $(".reng").toggleClass("sidenav");
         $(".lefter").toggleClass("colors");
-
+    })
+    $("#panel a").click(function () {
+        var Vary=$(this).text();
+        $(".vary").text(Vary);
     })
     $("#red").click(function () {
         $(".firstline").removeClass("bg-dark bg-success bg-warning").addClass("bg-danger")
