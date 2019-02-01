@@ -87,7 +87,7 @@ $(document).ready(function () {
         var Text2=$(this).text();
         $(".sorting").text(Text2);
     })
-    $(".show").click(function() {
+    $(".showe").click(function() {
         var Text3=$(this).text();
         $(".showing").text(Text3);
     })
