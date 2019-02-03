@@ -83,20 +83,54 @@ $(document).ready(function () {
         $(".thFoot").removeClass("bg-danger bg-success bg-warning").addClass("bg-dark")
         $(".end").removeClass("bg-danger bg-success bg-warning").addClass("bg-dark")
     })
+    var c = 0;
     $('.heart').on('click', function () {
         var count = parseInt($(this).data('click'), 10) || 0;
         count++;
-        $(this).data('click',count);
-        if(count==1){
-            alert("it is added your wishlist");
-            $(".zero").text(count); 
-        }
-        else{
+        $(this).data('click', count);
+        if (count == 1) {
+            c++;
+            alert("it is added your WishList");
+            $(".zero").text(c);
+        } else {
             alert("it is already added")
         }
         return false;
-           
-      });
+
+    });
+    var cl = 0;
+    $('.compress').on('click', function () {
+
+        var count = parseInt($(this).data('click'), 10) || 0;
+        count++;
+        $(this).data('click', count);
+        if (count == 1) {
+            cl++;
+            alert("it is added your COMPARE");
+            $(".czero").text(cl);
+        } else {
+            alert("it is already added")
+        }
+        return false;
+
+    });
+    var l = 0;
+    $('.shopp').on('click', function () {
+        $(".badge-danger").css({"display":"block","width":"30px"})
+        var count = parseInt($(this).data('click'), 10) || 0;
+        count++;
+        $(this).data('click', count);
+        if (count == 1) {
+            l++;
+            alert("it is added your Cart");
+            $(".badge-danger").text(l);
+        } else {
+            alert("it is already added")
+        }
+        return false;
+
+    });
+
 })
 $('.owl-carousel').owlCarousel({
     loop: false,
@@ -114,43 +148,43 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
 function openMovie(evt, movieName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+        tabcontent[i].style.display = "none";
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     document.getElementById(movieName).style.display = "block";
     evt.currentTarget.className += " active";
-  }
+}
 
-  document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen").click();
 
-  function openNav() {
+function openNav() {
     document.getElementById("mySidepanel").style.width = "250px";
-  }
-  
-  function closeNav() {
+}
+
+function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
-  }
+}
 
 
-  var dropdown = document.getElementsByClassName("dropdown-btn");
+var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
 for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
+    dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    })
 }
-  )}
-  

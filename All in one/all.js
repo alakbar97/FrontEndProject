@@ -116,7 +116,9 @@ $(document).ready(function () {
         Number1++;
         $(".count").text(Number1)
         if (Number1 == 3) {
-            setTimeout(function(){ alert("You cannot get more than 3 files"); }, 500);
+            setTimeout(function () {
+                alert("You cannot get more than 3 files");
+            }, 500);
             $(".plus").prop("disabled", true)
         }
     })
@@ -156,6 +158,56 @@ $(document).ready(function () {
             "color": "red"
         })
     })
+    var c = 0;
+    $('.heart').on('click', function () {
+        var count = parseInt($(this).data('click'), 10) || 0;
+        count++;
+        $(this).data('click', count);
+        if (count == 1) {
+            c++;
+            alert("it is added your WishList");
+            $(".zero").text(c);
+        } else {
+            alert("it is already added")
+        }
+        return false;
+
+    });
+    var cl = 0;
+    $('.compress').on('click', function () {
+
+        var count = parseInt($(this).data('click'), 10) || 0;
+        count++;
+        $(this).data('click', count);
+        if (count == 1) {
+            cl++;
+            alert("it is added your COMPARE");
+            $(".czero").text(cl);
+        } else {
+            alert("it is already added")
+        }
+        return false;
+
+    });
+    var l = 0;
+    $('.shopp').on('click', function () {
+        $(".badge-danger").css({
+            "display": "block",
+            "width": "30px"
+        })
+        var count = parseInt($(this).data('click'), 10) || 0;
+        count++;
+        $(this).data('click', count);
+        if (count == 1) {
+            l++;
+            alert("it is added your Cart");
+            $(".badge-danger").text(l);
+        } else {
+            alert("it is already added")
+        }
+        return false;
+
+    });
 })
 
 function openTab(evt, tabName) {
@@ -176,24 +228,24 @@ document.getElementById("defaultOpen").click();
 
 function openNav() {
     document.getElementById("mySidepanel").style.width = "250px";
-  }
-  
-  function closeNav() {
+}
+
+function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
-  }
+}
 
 
-  var dropdown = document.getElementsByClassName("dropdown-btn");
+var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
 for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
+    dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    })
 }
-  )}

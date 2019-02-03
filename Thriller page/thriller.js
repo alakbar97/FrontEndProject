@@ -94,6 +94,53 @@ $(document).ready(function () {
         var Text3=$(this).text();
         $(".showing").text(Text3);
     })
+    var c = 0;
+    $('.heart').on('click', function () {
+        var count = parseInt($(this).data('click'), 10) || 0;
+        count++;
+        $(this).data('click', count);
+        if (count == 1) {
+            c++;
+            alert("it is added your WishList");
+            $(".zero").text(c);
+        } else {
+            alert("it is already added")
+        }
+        return false;
+
+    });
+    var cl = 0;
+    $('.compress').on('click', function () {
+
+        var count = parseInt($(this).data('click'), 10) || 0;
+        count++;
+        $(this).data('click', count);
+        if (count == 1) {
+            cl++;
+            alert("it is added your COMPARE");
+            $(".czero").text(cl);
+        } else {
+            alert("it is already added")
+        }
+        return false;
+
+    });
+    var l = 0;
+    $('.shopp').on('click', function () {
+        $(".badge-danger").css({"display":"block","width":"30px"})
+        var count = parseInt($(this).data('click'), 10) || 0;
+        count++;
+        $(this).data('click', count);
+        if (count == 1) {
+            l++;
+            alert("it is added your Cart");
+            $(".badge-danger").text(l);
+        } else {
+            alert("it is already added")
+        }
+        return false;
+
+    });
 })
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
