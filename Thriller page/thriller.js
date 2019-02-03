@@ -141,6 +141,15 @@ $(document).ready(function () {
         return false;
 
     });
+    $(".showone").click(function () {
+        $(".bodyforcard .card").css({"width":"100%"});
+    })
+    $(".showtwo").click(function () {
+        $(".bodyforcard .card").css({"width":"48%"});
+    })
+    $(".showthree").click(function () {
+        $(".bodyforcard .card").css({"width":"30%"});
+    })
 })
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
