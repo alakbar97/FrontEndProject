@@ -7,6 +7,9 @@ html {
 }
 
 @media only screen and (max-width: 932px) {
+    .nt{
+        display: none;
+    }
     .wish, .comp, .respo, #elements{
         display: none;
     }
